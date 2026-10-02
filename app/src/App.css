@@ -53,11 +53,11 @@
 .todo-app::-webkit-scrollbar {
     width: 8px;
 }
-
+/* 
 .todo-app::-webkit-scrollbar-thumb {
     background: rgba(234, 179, 8, 0.35);
     border-radius: 999px;
-}
+} */
 
 .app-header {
     display: flex;
