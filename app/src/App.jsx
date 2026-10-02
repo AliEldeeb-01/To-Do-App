@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
+import Swal from 'sweetalert2'
 import styled from 'styled-components'
 import './App.css'
 
 const seedTasks = [
-  {  },
+  {},
 
 ]
 
@@ -74,7 +75,29 @@ function App() {
   }
 
   const deleteTask = (id) => {
-    setTasks((currentTasks) => currentTasks.filter((task) => task.id !== id))
+    Swal.fire({
+      title: "Sir,This your future.",
+      text: "Did you accomplish it in a way that satisfies you?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed)
+        setTasks((currentTasks) => currentTasks.filter((task) => task.id !== id))
+
+      Swal.fire({
+
+        title: "Deleted!",
+        text: "The world is full of beautiful things, so enjoy them.",
+        icon: "success",
+        timer: 900
+      });
+    });
+
+
+
   }
 
   const clearCompleted = () => {
