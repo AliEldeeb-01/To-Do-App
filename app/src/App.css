@@ -36,6 +36,8 @@
 }
 
 .todo-app {
+    width: 95%; 
+    margin: auto;
     position: relative;
     z-index: 1;
     width: min(100%, 760px);
