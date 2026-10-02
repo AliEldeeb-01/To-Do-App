@@ -234,6 +234,7 @@ const EmptyStatePlanet = styled.div`
   gap: 12px;
   width: 100%;
   padding: 14px 0;
+  overflow: hidden;
 
   .planet-loader {
     position: relative;
