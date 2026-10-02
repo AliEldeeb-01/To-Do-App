@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import './App.css'
 
 const seedTasks = [
-  { id: 1, text: 'Plan the sprint goals', done: true },
+  {  },
 
 ]
 

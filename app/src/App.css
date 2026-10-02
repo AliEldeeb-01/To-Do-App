@@ -346,13 +346,13 @@
 }
 
 .delete-btn-x {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* width: 25px; */
     /* height: 25px; */
     /* border: 1px solid #e20808; */
-    border-width: 1px;
-    transform: translateY(-3px);
-}
+    /* border-width: 1px; */
+    /* transform: translateY(-3px); */
+ } 
 
 .task-text {
     color: #e2e8f0;
