@@ -3,10 +3,7 @@ import Swal from 'sweetalert2'
 import styled from 'styled-components'
 import './App.css'
 
-const seedTasks = [
-  {},
-
-]
+const seedTasks = []
 
 function App() {
   const [tasks, setTasks] = useState(() => {
