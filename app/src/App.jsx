@@ -88,7 +88,7 @@ function App() {
           title: "Deleted!",
           text: "The world is full of beautiful things, so enjoy them.",
           icon: "success",
-          timer: 900
+          timer: 1200
         });
       }
     });
@@ -98,7 +98,30 @@ function App() {
   }
 
   const clearCompleted = () => {
-    setTasks((currentTasks) => currentTasks.filter((task) => !task.done))
+
+
+    Swal.fire({
+      title: "Sir,This your future.",
+      text: "Did you accomplish it in a way that satisfies you?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        setTasks((currentTasks) => currentTasks.filter((task) => !task.done))
+        Swal.fire({
+
+          title: "Deleted!",
+          text: "The world is full of beautiful things, so enjoy them.",
+          icon: "success",
+          timer: 1200
+        });
+      }
+    });
+
+
   }
 
   useEffect(() => {
